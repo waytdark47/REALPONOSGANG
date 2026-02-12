@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'UnifrakturMaguntia', cursive;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+}
+
+.container {
+    max-width: 800px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    font-size: 4em;
+    color: #c9a227;
+    text-shadow: 0 0 10px rgba(201, 162, 39, 0.5);
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 2em;
+    color: #888;
+    font-weight: normal;
+}
+
+/* Секция плеера */
+.player-section {
+    background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 20px rgba(201, 162, 39, 0.1);
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.control-btn {
+    background: #222;
+    border: 1px solid #c9a227;
+    color: #c9a227;
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.control-btn:hover {
+    background: #c9a227;
+    color: #000;
+    box-shadow: 0 0 15px rgba(201, 162, 39, 0.5);
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #333;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #c9a227, #8b7355);
+    border-radius: 4px;
+    transition: width 0.1s linear;
+}
+
+.time-display {
+    font-size: 1.2em;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #888;
+}
+
+#volumeSlider {
+    width: 100px;
+    accent-color: #c9a227;
+}
+
+/* Текст песни */
+.lyrics {
+    text-align: left;
+    line-height: 2;
+    padding: 20px 0;
+}
+
+.lyrics p {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.lyrics p:hover {
+    color: #c9a227;
+}
+
+.lyrics .chorus {
+    color: #c9a227;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 20px 0;
+    text-shadow: 0 0 5px rgba(201, 162, 39, 0.3);
+}
+
+.lyrics .verse-title {
+    text-align: center;
+    font-size: 1.3em;
+    color: #666;
+    margin: 15px 0;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    color: #444;
+    font-size: 1.2em;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    
+    header h2 {
+        font-size: 1.5em;
+    }
+    
+    .lyrics p {
+        font-size: 1.2em;
+    }
+    
+    .lyrics .chorus {
+        font-size: 1.4em;
+    }
+}
+.nav-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+}
+
+.nav-btn-blue {
+    background: #2196f3;
+    color: #ffeb3b;
+    box-shadow: 0 4px 8px rgba(33, 150, 243, 0.3);
+}
+
+.nav-btn-blue:hover {
+    background: #1976d2;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(33, 150, 243, 0.4);
+}
+
+.nav-btn-black {
+    background: #1a1a1a;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.nav-btn-black:hover {
+    background: #333333;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+.back-button-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.2s;
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+.back-btn:hover {
+    background: #43a047;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(76, 175, 80, 0.4);
+}

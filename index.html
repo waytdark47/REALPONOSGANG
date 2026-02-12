@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Сапёр</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💣 Сапёр</h1>
+        
+        <div class="game-info">
+            <div class="info-box">
+                <span class="icon">🚩</span>
+                <span id="flags-count">0</span>
+            </div>
+            <div class="info-box">
+                <span class="icon">💣</span>
+                <span id="mines-count">10</span>
+            </div>
+        </div>
+
+        <div class="game-board" id="game-board"></div>
+
+        <div class="controls">
+            <select id="difficulty">
+                <option value="easy">Легко (9×9, 10 мин)</option>
+                <option value="medium">Средне (16×16, 40 мин)</option>
+                <option value="hard">Сложно (16×30, 99 мин)</option>
+            </select>
+            <button id="restart-btn">🔄 Новая игра</button>
+            <a href="ssilka.html" class="nav-btn nav-btn-blue">Лендинг</a>
+            <a href="dark_prince.html" class="nav-btn nav-btn-black">Тёмный принц</a>
+        </div>
+
+        <div id="message" class="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
